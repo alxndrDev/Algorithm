@@ -1,5 +1,7 @@
 package me.alxndr.chapter1;
 
+import java.util.Scanner;
+
 /**
  * @author : Alexander Choi
  * @date : 2022/01/28
@@ -25,7 +27,13 @@ public class Problem1 {
 
     public static void main(String[] args) {
         Problem1 findString = new Problem1();
-        int answer = findString.solution("Computercoller", 'c');
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.next();
+        char c = sc.next().charAt(0);
+
+        int answer = findString.solution(str, c);
+
         System.out.println(answer);
     }
 

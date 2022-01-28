@@ -1,12 +1,10 @@
 package me.alxndr.chapter1;
 
-import java.util.Locale;
-
 /**
  * @author : Alexander Choi
  * @date : 2022/01/28
  */
-public class FindString {
+public class Problem1 {
 
     public int solution(String str, char t) {
 
@@ -26,7 +24,7 @@ public class FindString {
     }
 
     public static void main(String[] args) {
-        FindString findString = new FindString();
+        Problem1 findString = new Problem1();
         int answer = findString.solution("Computercoller", 'c');
         System.out.println(answer);
     }
